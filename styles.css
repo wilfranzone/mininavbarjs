@@ -1,0 +1,105 @@
+/* General Resets */
+
+* { margin:0;
+    padding:0;
+    box-sizing: border-box;}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+
+/* Header */
+
+header {
+    
+    height:100vh;
+    background-image:linear-gradient( 112.1deg,  rgba(32,38,57,0.9) 11.4%, rgba(63,76,119,0.9) 70.2% ), url("mini.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding:0 2em;
+    padding-top:1em;
+    
+}
+
+.brand {
+    width:80%;
+    margin-top:-0.5em;
+}
+
+/* Nav bar */
+ul {
+    list-style-type: none;
+   
+}
+
+ul li {
+    display: inline-block;
+    padding-top:0.3em;
+}
+
+li > a {
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size:0.7em;
+    padding-left:1.5em;
+    letter-spacing: 0.07em;
+    
+    
+}
+
+i {
+    color:#fff;
+    padding-top:0.5em;
+    padding-left:1em;
+}
+
+
+
+
+/* MEDIAS QUERIES */
+@media (min-width: 320px) and (max-width: 768px) {
+  
+    header {
+       padding:1em 1em;
+    }
+
+    .horizontal {
+        display:none;
+    }
+
+    .social-links {
+        display:none;
+        
+    }
+
+    .brand {
+        width:60%;
+        opacity:0.9;
+
+    }
+    
+  }
+
+  @media (min-width: 768px) and (max-width: 1400px)  {
+  
+    header {
+     
+       padding:1em 2em;
+    }
+
+    .horizontal {
+        display: contents;
+    }
+    
+    
+    .menu-burguer {
+        display:none;
+    }
+  }
+  
+ 
